@@ -5,6 +5,7 @@ var del = require('del');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
+var surge = require('gulp-surge')
 
 var browserSync = require('browser-sync').create();
 
@@ -57,3 +58,10 @@ gulp.task('serve', ['build'], function() {
     gulp.watch("./src/index.html", ['html']);
     gulp.watch("./src/**/*.js", ['js']);
   });
+
+  gulp.task('deploy', ['build'], ()=> {
+    return surge({
+        project: './build',
+        domain: 'sadhusevatrust.com'
+      });
+  })
