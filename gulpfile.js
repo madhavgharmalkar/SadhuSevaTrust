@@ -56,6 +56,7 @@ gulp.task('serve', ['build'], function() {
     gulp.watch("./src/**/*.scss", ['scss']);
     gulp.watch("./src/index.html", ['html']);
     gulp.watch("./src/**/*.js", ['js']);
+    gulp.watch("/src/img/**/*.*", ['img']);
 });
 
 gulp.task('deploy', ['build'], ()=> {
