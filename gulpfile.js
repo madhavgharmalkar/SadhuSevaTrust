@@ -46,7 +46,6 @@ gulp.task('img', () => {
 
 gulp.task('build', ['scss', 'html', 'js', 'img']);
 
-
 gulp.task('serve', ['build'], function() {
     browserSync.init({
         server: {
@@ -57,11 +56,11 @@ gulp.task('serve', ['build'], function() {
     gulp.watch("./src/**/*.scss", ['scss']);
     gulp.watch("./src/index.html", ['html']);
     gulp.watch("./src/**/*.js", ['js']);
-  });
+});
 
-  gulp.task('deploy', ['build'], ()=> {
+gulp.task('deploy', ['build'], ()=> {
     return surge({
         project: './build',
         domain: 'sadhusevatrust.com'
-      });
-  })
+    });
+})
