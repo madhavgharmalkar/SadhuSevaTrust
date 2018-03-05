@@ -1,0 +1,35 @@
+{
+  "name": "sadhusevatrust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhavgharmalkar/SadhuSevaTrust.git"
+  },
+  "author": "Madhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhavgharmalkar/SadhuSevaTrust/issues"
+  },
+  "homepage": "https://github.com/madhavgharmalkar/SadhuSevaTrust#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "clean": "^4.0.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rev": "^8.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-usemin": "^0.3.29"
+  },
+  "dependencies": {
+    "include-media": "^1.4.9",
+    "spectre.css": "^0.5.1"
+  }
+}
