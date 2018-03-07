@@ -59,6 +59,13 @@ gulp.task('serve', ['build'], function() {
     gulp.watch("/src/img/**/*.*", ['img']);
 });
 
+gulp.task('deploy:dev', ['build'], () => {
+    return surge({
+        project: './build',
+        domain: 'dry-punishment.surge.sh'
+    });
+})
+
 gulp.task('deploy', ['build'], ()=> {
     return surge({
         project: './build',

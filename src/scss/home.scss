@@ -2,7 +2,7 @@ section.home {
     height: 100vh;
     width: 100%;
     
-    background-image: url('/img/pot.jpg');
+    background-image: url('/img/eco.jpg');
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -12,27 +12,63 @@ section.home {
     .overlay {
         height: 100%;
         width: 100%;
-        background-color: rgba($color: white, $alpha: .4);
+        background-color: rgba($color: #34495e, $alpha: .4);
+
+        align-items: center;
+        margin: 0;
+
+        .divider-vert {
+            height: 75vh;
+        }
+
+        .divider {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .slogan {
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            width: 25vmax;
+        }
+    }
+
+    #mc_embed_signup {
+        color: white;
 
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
 
-        .logo {
-            max-width: 25vmax;
+        margin-top: 100px;
+        
+        &_scroll {
+            text-align: center;
         }
 
-        .buttons {
-            // background-color: rgba($color: white, $alpha: .5);
-            // height: 200px;
-            // width: 100%;
-            margin-top: 80px;
-
-            button {
-                border-radius: 5px;
-            }
+        .email-wrapper {
+            display: flex;
+            flex-direction: row;
         }
+
+        .email {
+            margin: 0 auto;
+            text-align: center;
+            background-color: white;
+            height: 46px;
+        }
+
+        .button {
+            margin-left: 10px;
+            background-color: rgba($color: white, $alpha: .3);
+            padding: 10px 20px;
+            color: white;
+        }
+
     }
 
 }
