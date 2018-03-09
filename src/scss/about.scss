@@ -1,0 +1,23 @@
+section.about {
+
+    padding: 40px 0;
+
+    .container {
+        margin-top: 20px;
+
+        .about-text {
+            padding: 0px 15px;
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 80%;
+            }
+        }
+    }
+
+}

@@ -3,4 +3,23 @@ footer {
     width: 100%;
     min-height: 200px;
     padding-top: 25px;
+
+    .social {
+        .title {
+            color: white;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            
+            a:any-link {
+                color: white;
+            }
+        }
+    }
 }
