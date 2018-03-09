@@ -41,10 +41,15 @@ gulp.task('js', () => {
 
 gulp.task('img', () => {
     return gulp.src('./src/img/**/*.*')
-        .pipe(gulp.dest('./build/img/'))
-})
+        .pipe(gulp.dest('./build/img/'));
+});
 
-gulp.task('build', ['scss', 'html', 'js', 'img']);
+gulp.task('favicon', () => {
+    return gulp.src('./src/favicon.ico')
+        .pipe(gulp.dest('./build/'));
+});
+
+gulp.task('build', ['scss', 'html', 'js', 'img', 'favicon']);
 
 gulp.task('serve', ['build'], function() {
     browserSync.init({
