@@ -8,7 +8,6 @@
     "build": "gulp build",
     "deploy": "gulp clean && gulp deploy",
     "deploy:dev": "gulp clean && gulp deploy:dev"
-
   },
   "repository": {
     "type": "git",
@@ -34,6 +33,8 @@
   },
   "dependencies": {
     "include-media": "^1.4.9",
+    "jquery": "^3.3.1",
+    "scrollreveal": "^3.3.6",
     "spectre.css": "^0.5.1"
   }
 }

@@ -13,12 +13,13 @@ footer {
         .social-icons {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             color: white;
             
             a:any-link {
                 color: white;
+                margin: 0px 10px;
             }
         }
     }

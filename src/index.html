@@ -14,11 +14,10 @@
     <meta property="og:description" content="Founded in 2017, Sadhu Seva Trust is an initiative to help the residents of Vrindavan who are in need of food, clothing, shelter, and support.">
     <meta property="og:image" content="https://sadhusevatrust.com/img/logo.png">
     <meta property="og:url" content="https://sadhusevatrust.com">
-
+    
     <meta name="twitter:card" content="summary_large_image">
     
     <link rel="stylesheet" href="/styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png" />
@@ -41,6 +40,18 @@
     <meta name="msapplication-square150x150logo" content="/img/icons/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="/img/icons/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="/img/icons/mstile-310x310.png" />
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    
+    <!-- build:vendorsjs vendors.js -->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/scrollreveal/dist/scrollreveal.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:appjs app.js -->
+    <script defer src="/js/app.js"></script>
+    <!-- endbuild -->
+    
     
 </head>
 <body>
@@ -86,18 +97,21 @@
         <div class="container grid-xl">
             <div class="columns">
                 <div class="column col-6 col-md-12 about-text">
-                    <h1 class="text-center">About Us</h1>
+                    <h1 class="text-center reveal">About Us</h1>
                     <div class="divider"></div>
-                    <p>
-                        Founded in 2017, Sadhu Seva Trust is an initiative to help the residents of Vrindavan who are in need of food, clothing, shelter, and support. Vrindavan is a holy city in India which attracts hundreds upon thousands of pilgrims every year from all over the world.
-                    </p>
-                    <p>
-                        Run by young philanthropists who have lived in Vrindavan for more than 15 years combined, the founders of the Sadhu Seva Trust have a vision to give back to the people who have taken care of them in a place they affectionately now call home. The organisation is based in Vrindavan and therefore is physically and directly able to provide those in need.
-                    </p>
-                    <p>This Charity is a small endeavour to serve the residents of Vrindavan, it is dedicated to His Divine Grace A.C Bhaktivedanta Swami Prabhupada.</p>
+                    <div class="reveal">
+                        <p>
+                            Founded in 2017, Sadhu Seva Trust is an initiative to help the residents of Vrindavan who are in need of food, clothing, shelter, and support. Vrindavan is a holy city in India which attracts hundreds upon thousands of pilgrims every year from all over the world.
+                        </p>
+                        <p>
+                            Run by young philanthropists who have lived in Vrindavan for more than 15 years combined, the founders of the Sadhu Seva Trust have a vision to give back to the people who have taken care of them in a place they affectionately now call home. The organisation is based in Vrindavan and therefore is physically and directly able to provide those in need.
+                        </p>
+                        <p>This Charity is a small endeavour to serve the residents of Vrindavan, it is dedicated to His Divine Grace A.C Bhaktivedanta Swami Prabhupada.</p>
+                        
+                    </div>
                 </div>
                 <div class="column col-6 col-md-12 about-image">
-                    <img src="/img/hb-vk.jpg" alt="" class="img-responsive rounded">
+                    <img src="/img/hb-vk.jpg" alt="" class="img-responsive rounded reveal">
                 </div>
             </div>
         </div>
@@ -111,11 +125,11 @@
     <footer>
         <div class="container grid-xl">
             <div class="columns">
-                <div class="column col-m12 col-2 social col-mx-auto">
+                <div class="column col-md-12 col-2 social col-mx-auto">
                     <h3 class="title">Follow us!</h3>
                     <div class="social-icons">
-                        <a href="https://fb.me/sadhusevatrust"><i class="fab fa-facebook-square fa-2x"></i></a>
-                        <a href="https://instagr.am/sadhusevatrust"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://fb.me/sadhusevatrust" class="icon"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="https://instagr.am/sadhusevatrust" class="icon"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="column col-m12 col-6 container"></div>

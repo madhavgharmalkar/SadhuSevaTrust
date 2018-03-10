@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('clean', () => {
     return del([
         'build/*'
-    ])
+    ]);
 });
 
 gulp.task('html', () => {
@@ -32,12 +32,12 @@ gulp.task('scss', () => {
         .pipe(browserSync.stream())
 })
 
-gulp.task('js', () => {
-    return gulp.src('./src/**/*.js')
-        .pipe(concat('/bundle.js'))
-        .pipe(gulp.dest('./build/'))
-        .pipe(browserSync.stream())
-})
+// gulp.task('js', () => {
+//     return gulp.src('./src/**/*.js')
+//         .pipe(concat('/bundle.js'))
+//         .pipe(gulp.dest('./build/'))
+//         .pipe(browserSync.stream());
+// })
 
 gulp.task('img', () => {
     return gulp.src('./src/img/**/*.*')
@@ -49,7 +49,7 @@ gulp.task('favicon', () => {
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('build', ['scss', 'html', 'js', 'img', 'favicon']);
+gulp.task('build', ['scss', 'html', 'img', 'favicon']);
 
 gulp.task('serve', ['build'], function() {
     browserSync.init({
@@ -60,7 +60,7 @@ gulp.task('serve', ['build'], function() {
 
     gulp.watch("./src/**/*.scss", ['scss']);
     gulp.watch("./src/index.html", ['html']);
-    gulp.watch("./src/**/*.js", ['js']);
+    gulp.watch("./src/**/*.js", ['html']);
     gulp.watch("/src/img/**/*.*", ['img']);
 });
 
