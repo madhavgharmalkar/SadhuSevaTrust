@@ -67,13 +67,13 @@ gulp.task('serve', ['build'], function() {
 gulp.task('deploy:dev', ['build'], () => {
     return surge({
         project: './build',
-        domain: 'dry-punishment.surge.sh'
+        domain: 'sadhusevatrust.surge.sh'
     });
-})
+});
 
 gulp.task('deploy', ['build'], ()=> {
     return surge({
         project: './build',
         domain: 'sadhusevatrust.com'
     });
-})
+});
