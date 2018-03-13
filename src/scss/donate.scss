@@ -1,0 +1,26 @@
+section.donate {
+    padding: 40px 0px;
+
+    .title {
+        text-align: center;
+        width: 100%;
+
+        .divider {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 20px 40px;
+            text-align: left;
+        }
+    }
+
+    .img-child {
+        max-width: 70%;
+        margin: 0 auto;
+        max-height: 350px;
+        overflow: hidden;
+    }
+
+}
