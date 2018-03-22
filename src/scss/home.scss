@@ -36,6 +36,19 @@ section.home {
         }
     }
 
+    .donate-button {
+        margin: 0 auto;
+        width: 40%;
+
+        a {
+            width: 100%;
+            font-size: 1.5em;
+            border-radius: 5px;
+            height: 46px;
+            line-height: 30px;
+        }
+    }
+
     #mc_embed_signup {
         color: white;
 
